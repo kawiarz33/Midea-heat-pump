@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 """
 Midea heat pump. The Python plugin for Domoticz
-Author: elfabric.eu
+Author: Kawiarz33
 Requirements: 
     1.python module minimalmodbus -> http://minimalmodbus.readthedocs.io/en/master/
         (pi@raspberrypi:~$ sudo pip3 install minimalmodbus)
     2.Communication module Modbus USB to RS485 converter module
 """
 """
-<plugin key="Midea heat pump" version="1.0.0" author="Kawiarz">
+<plugin key="Midea heat pump" version="1.0.0" author="Kawiarz33">
     <params>
         <param field="SerialPort" label="Modbus Port" width="200px" required="true" default="/dev/ttyUSB0" />
         <param field="Mode1" label="Baud rate" width="40px" required="true" default="9600"  />
