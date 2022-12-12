@@ -47,7 +47,7 @@ class BasePlugin:
 
         self.rs485.mode = minimalmodbus.MODE_RTU
         devicecreated = []
-        Domoticz.Log("Chint DTSU666 Modbus plugin start")
+        Domoticz.Log("Midea heat pump plugin start")
         self.runInterval = int(Parameters["Mode3"]) * 1 
         if 1 not in Devices:
             Domoticz.Device(Name="PC oper freq", Unit=1,TypeName="Hz",Used=0).Create()
