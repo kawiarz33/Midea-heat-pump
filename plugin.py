@@ -82,18 +82,18 @@ class BasePlugin:
         if self.runInterval <= 0:
             # Get data from Midea
             try:
-                PC_Freq = self.rs485.read_register(100, functioncode=3, numberOfRegisters=2)
-                W_in_temp = self.rs485.read_register(104, functioncode=3, numberOfRegisters=2)
-                W_out_temp = self.rs485.read_register(105, functioncode=3, numberOfRegisters=2)
-                PC_Fan = self.rs485.read_register(102, functioncode=3, numberOfRegisters=2)
-                Cond_temp = self.rs485.read_register(106, functioncode=3, numberOfRegisters=2)
-                Amb_temp = self.rs485.read_register(107, functioncode=3, numberOfRegisters=2)
-                Comp_in_temp = self.rs485.read_register(109, functioncode=3, numberOfRegisters=2)
-                Comp_out_temp = self.rs485.read_register(108, functioncode=3, numberOfRegisters=2)
-                Comp_Current = self.rs485.read_register(118, functioncode=3, numberOfRegisters=2)
-                Curve_temp = self.rs485.read_register(137, functioncode=3, numberOfRegisters=2)
-                W_flow = self.rs485.read_register(138, functioncode=3, numberOfRegisters=2)*100
-                Heat_power = self.rs485.read_register(140, functioncode=3, numberOfRegisters=2)*100
+                PC_Freq = self.rs485.read_register(100, functioncode=3, number_of_decimals=0)
+                W_in_temp = self.rs485.read_register(104, functioncode=3, number_of_decimals=0)
+                W_out_temp = self.rs485.read_register(105, functioncode=3, number_of_decimals=0)
+                PC_Fan = self.rs485.read_register(102, functioncode=3, number_of_decimals=0)
+                Cond_temp = self.rs485.read_register(106, functioncode=3, number_of_decimals=0)
+                Amb_temp = self.rs485.read_register(107, functioncode=3, number_of_decimals=0)
+                Comp_in_temp = self.rs485.read_register(109, functioncode=3, number_of_decimals=0)
+                Comp_out_temp = self.rs485.read_register(108, functioncode=3, number_of_decimals=0)
+                Comp_Current = self.rs485.read_register(118, functioncode=3, number_of_decimals=0)
+                Curve_temp = self.rs485.read_register(137, functioncode=3, number_of_decimals=0)
+                W_flow = self.rs485.read_register(138, functioncode=3, number_of_decimals=0)*100
+                Heat_power = self.rs485.read_register(140, functioncode=3, number_of_decimals=0)*100
                 
             except:
                 Domoticz.Log("Connection problem");
