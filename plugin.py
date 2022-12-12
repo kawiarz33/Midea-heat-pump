@@ -115,18 +115,18 @@ class BasePlugin:
 
             if Parameters["Mode6"] == 'Debug':
                 Domoticz.Log("Midea heat pump Modbus Data")
-                Domoticz.Log('PC oper freq: {0:.3f} V'.format(PC_Freq))
-                Domoticz.Log('PC Water inlet temp: {0:.3f} V'.format(W_in_temp))
-                Domoticz.Log('PC Water out temp: {0:.3f} V'.format(W_out_temp))
-                Domoticz.Log('PC Fan: {0:.3f} V'.format(PC_Fan))
-                Domoticz.Log('Condenser temperature: {0:.3f} V'.format(Cond_temp))
-                Domoticz.Log('Outdoor ambient temp: {0:.3f} V'.format(Amb_temp))
-                Domoticz.Log('Compressor inlet temp: {0:.3f} A'.format(Comp_in_temp))
-                Domoticz.Log('Compressor discharge temp: {0:.3f} A'.format(Comp_out_temp))
-                Domoticz.Log('Outdoor unit current: {0:.3f} A'.format(Comp_Current))
-                Domoticz.Log('curve T1S calculated value: {0:.3f} W'.format(Curve_temp))
-                Domoticz.Log('Water flow: {0:.3f} W'.format(W_flow))
-                Domoticz.Log('Heat Power: {0:.3f} W'.format(Heat_power))
+                Domoticz.Log('PC oper freq: {0:d} Hz'.format(PC_Freq))
+                Domoticz.Log('PC Water inlet temp: {0:d} C'.format(W_in_temp))
+                Domoticz.Log('PC Water out temp: {0:d} C'.format(W_out_temp))
+                Domoticz.Log('PC Fan: {0:d} rpm'.format(PC_Fan))
+                Domoticz.Log('Condenser temperature: {0:d} C'.format(Cond_temp))
+                Domoticz.Log('Outdoor ambient temp: {0:d} C'.format(Amb_temp))
+                Domoticz.Log('Compressor inlet temp: {0:d} C'.format(Comp_in_temp))
+                Domoticz.Log('Compressor discharge temp: {0:d} C'.format(Comp_out_temp))
+                Domoticz.Log('Outdoor unit current: {0:d} A'.format(Comp_Current))
+                Domoticz.Log('curve T1S calculated value: {0:d} C'.format(Curve_temp))
+                Domoticz.Log('Water flow: {0:d} m3/h'.format(W_flow))
+                Domoticz.Log('Heat Power: {0:d} W'.format(Heat_power))
                 
 
             self.runInterval = int(Parameters["Mode3"]) * 6
