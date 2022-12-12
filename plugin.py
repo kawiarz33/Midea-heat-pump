@@ -8,7 +8,7 @@ Requirements:
     2.Communication module Modbus USB to RS485 converter module
 """
 """
-<plugin key="Midea heat pump" version="1.0.0" author="Kawiarz33">
+<plugin key="Midea" name="Midea heat pump" version="1.0.0" author="Kawiarz33">
     <params>
         <param field="SerialPort" label="Modbus Port" width="200px" required="true" default="/dev/ttyUSB0" />
         <param field="Mode1" label="Baud rate" width="40px" required="true" default="9600"  />
